@@ -16,6 +16,7 @@ void PID::Init(double p, double i, double d) {
 	PID::Kd=d;
 	PID::i_error=0;
 	PID::d_error=0;
+	PID::p_error=0;
 }
 
 void PID::UpdateError(double cte) {
